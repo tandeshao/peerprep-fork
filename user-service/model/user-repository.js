@@ -9,7 +9,6 @@ import mongoose from 'mongoose';
 const PASSWORD = process.env.PASSWORD;
 const DB_NAME = process.env.DB_NAME;
 let ATLAS_URI = process.env.ENV == "DEV" ? process.env.DB_LOCAL_URI : process.env.MONGODB_URI
-console.log(ATLAS_URI)
 
 mongoose.connect(ATLAS_URI,
     { useNewUrlParser: true,
