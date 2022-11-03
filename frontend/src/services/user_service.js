@@ -35,9 +35,6 @@ export const handleLogin = async (email, password) => {
   let message = "";
   let token = "";
   let refreshToken = "";
-  console.log("request sent");
-  console.log(REACT_APP_AUTH_SERVER_URL);
-  console.log(LOG_IN_ENDPOINT);
   await axios
     .post(LOG_IN_ENDPOINT, body, { withCredentials: true })
     .then((res) => {
